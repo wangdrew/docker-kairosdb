@@ -20,4 +20,3 @@ ADD config-kairos.sh /usr/bin/config-kairos.sh
 
 # Run kairosdb in foreground on boot
 CMD ["/usr/bin/config-kairos.sh"]
-ENTRYPOINT ["/opt/kairosdb/bin/kairosdb.sh", "run"]
