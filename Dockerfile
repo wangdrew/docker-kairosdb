@@ -19,5 +19,5 @@ ENV CASSANDRA_HOST_LIST 10.1.2.3:9160
 ADD config-kairos.sh /usr/bin/config-kairos.sh
 
 # Run kairosdb in foreground on boot
-ENTRYPOINT["/usr/bin/config-kairos.sh"]
+CMD ["/usr/bin/config-kairos.sh"]
 ENTRYPOINT ["/opt/kairosdb/bin/kairosdb.sh", "run"]

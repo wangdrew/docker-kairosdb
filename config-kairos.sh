@@ -1,7 +1,7 @@
 #!/bin/bash
 
 if [[ -z "$CASSANDRA_HOST_LIST" ]]; then
-    export CASSANDRA_HOST_LIST=$(docker-ip):9160
+    export CASSANDRA_HOST_LIST=10.1.2.3:9160
 fi
 #if [[ -z "$KAIROS_JETTY_PORT" ]]; then
 #    export KAIROS_JETTY_PORT=8083
