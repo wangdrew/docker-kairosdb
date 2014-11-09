@@ -3,7 +3,7 @@ MAINTAINER wangdrew
 
 # Install KAIROSDB
 RUN cd /opt; \
-  curl -OL https://github.com/kairosdb/kairosdb/releases/download/v0.9.4/kairosdb-0.9.4-6.tar.gz
+  curl -L https://github.com/kairosdb/kairosdb/releases/download/v0.9.4/kairosdb-0.9.4-6.tar.gz | \
   tar zxfp -
 
 ADD kairosdb.properties /opt/kairosdb/conf/kairosdb.properties
