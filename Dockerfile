@@ -15,7 +15,7 @@ EXPOSE 4242 8083
 # Set Kairos config vars
 #ENV KAIROS_JETTY_PORT 8083
 ENV CASSANDRA_HOST_LIST 10.1.2.3:9160
-ENV LOGLEVEL DEBUG
+ENV LOGLEVEL INFO
 
 # Copy scripts into container to set kairos config params
 ADD config-kairos.sh /usr/bin/config-kairos.sh
